@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WeatherActivity">
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/Clear"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/clear_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="5dp"/>
+    <Button
+        android:id="@+id/Partly"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/partly_cloudy_icon"
+        app:layout_constraintTop_toTopOf="@id/Clear"
+        app:layout_constraintLeft_toRightOf="@id/Clear"/>
+    <Button
+        android:id="@+id/Mostly"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/mostly_cloudy_icon"
+        app:layout_constraintTop_toTopOf="@id/Clear"
+        app:layout_constraintLeft_toRightOf="@id/Partly"/>
+    <Button
+        android:id="@+id/Cloudy"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/cloudy_icon"
+        app:layout_constraintTop_toTopOf="@id/Clear"
+        app:layout_constraintLeft_toRightOf="@id/Mostly"/>
+
+
+
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/Rain"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/rain_icon"
+        app:layout_constraintTop_toBottomOf="@id/Clear"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="5dp"/>
+    <Button
+        android:id="@+id/SnowRain"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/snow_rain_icon"
+        app:layout_constraintTop_toTopOf="@id/Rain"
+        app:layout_constraintLeft_toRightOf="@id/Rain"/>
+    <Button
+        android:id="@+id/Snow"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/snow_icon"
+        app:layout_constraintTop_toTopOf="@id/Rain"
+        app:layout_constraintLeft_toRightOf="@id/SnowRain"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

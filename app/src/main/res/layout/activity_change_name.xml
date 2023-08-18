@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeName"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="10dp"
+        />
+    <EditText
+        android:id="@+id/newNameInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/signup_text"
+        android:layout_marginBottom="130dp"
+        />
+
+    <Button
+        android:id="@+id/changeNameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_bar"
+        android:text="Name 변경"
+        android:textSize="15dp"/>
+
+</LinearLayout>
